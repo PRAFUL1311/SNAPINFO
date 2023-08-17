@@ -15,31 +15,43 @@
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-    android:id="@+id/button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="52dp"
-    android:text="Goto Image Image classification"
-    android:onClick="onGotoimageActivity"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:onClick="onGotoflowerActivity"
-        android:text="Goto flower classification"
+        android:id="@+id/button"
+        android:layout_width="166dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/baseline_image_24"
+        android:onClick="onGotoimageActivity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button2"
 
+        android:layout_width="147dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/flower"
+        android:onClick="onGotoflowerActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="156dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/baseline_emoji_objects_24"
+        android:onClick="onGotoobjectDetection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

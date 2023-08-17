@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.ml.helper.ImagehelperActivity;
 import com.example.ml.image.FlowerClassicationActivity;
 import com.example.ml.image.ImageclassificationActivity;
+import com.example.ml.image.objectDetectionActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void demo(){
+    public void onGotoobjectDetection(View view) {
+        //start a helper activity
+        Intent intent = new Intent(this, objectDetectionActivity.class);
+        startActivity(intent);
 
     }
+
+
 }

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
 
     <application
         android:allowBackup="true"
@@ -17,6 +24,7 @@
             android:name=".image.ImageclassificationActivity"
             android:exported="false" />
         <activity android:name=".image.FlowerClassicationActivity"/>
+        <activity android:name=".image.objectDetectionActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,7 +35,7 @@
             </intent-filter>
         </activity>
         <provider
-            android:authorities="com.example.ml.fileprovider"
+            android:authorities="com.iago.fileprovider"
             android:name="androidx.core.content.FileProvider"
             android:grantUriPermissions="true">
             <meta-data

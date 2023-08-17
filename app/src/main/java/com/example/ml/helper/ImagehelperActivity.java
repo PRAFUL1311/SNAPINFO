@@ -66,7 +66,7 @@ public class ImagehelperActivity extends AppCompatActivity {
    public  void onStartCamera(View V){
        photoFile= createPhotoFile();
 
-        Uri fileUri= FileProvider.getUriForFile(this,"com.example.ml.fileprovider",photoFile);
+        Uri fileUri= FileProvider.getUriForFile(this,"com.iago.fileprovider",photoFile);
         Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         intent.putExtra(MediaStore.EXTRA_OUTPUT,fileUri);
         startActivityForResult(intent,REQUEST_CAPTURE_IMAGE);
@@ -74,7 +74,7 @@ public class ImagehelperActivity extends AppCompatActivity {
 
    private File createPhotoFile(){
        File photofilelDir=new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES),"ML_IMAGE_HELPER");
-    if(photofilelDir.exists()){
+    if(!photofilelDir.exists()){
                 photofilelDir.mkdirs();
            }
  String name=new SimpleDateFormat("yyyymMMdd_HHmmss").format(new Date());

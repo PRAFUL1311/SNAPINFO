@@ -40,6 +40,8 @@ dependencies {
     implementation("com.google.mlkit:image-labeling:17.0.7")
     //custom image
     implementation("com.google.mlkit:image-labeling-custom:17.0.1")
+    //object detection
+    implementation("com.google.mlkit:object-detection:17.0.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
