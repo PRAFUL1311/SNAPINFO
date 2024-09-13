@@ -161,6 +161,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact
 For any questions or feedback, please contact:
 
-Email: your.email@example.com
-GitHub: yourusername
-sql
+Email: Bombatkarpraful11@gmail.com
+GitHub:Praful_1311
+
